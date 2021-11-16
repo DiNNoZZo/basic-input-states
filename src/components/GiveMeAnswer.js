@@ -26,7 +26,7 @@ function GiveMeAnswer() {
   return (
     <Fragment>
       <div style={{ backgroundColor: "snow" }}>
-        <p>best varian :) dont repeat self</p>
+        <p>best varian :) don't repeat yourself</p>
         <Question
           getStates={handleChangeStates}
           rank="answer1"
