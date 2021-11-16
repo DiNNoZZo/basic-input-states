@@ -23,6 +23,7 @@ function GiveMeAnswer() {
     });
   };
 
+  let text = [];
   return (
     <Fragment>
       <div style={{ backgroundColor: "snow" }}>
@@ -48,11 +49,11 @@ function GiveMeAnswer() {
           question="Otazka 4"
         />
       </div>
-      {Object.values(answers).map((answer, i) => (
-        <h2 key={i}>
-          Odpoved{i + 1}: {answer}
-        </h2>
-      ))}
+      <button>Show answer</button>
+      {Object.values(answers).map((answer, i) => {
+        text.push(`${answer},`);
+      })}
+      <h2>{text}</h2>
     </Fragment>
   );
 }
